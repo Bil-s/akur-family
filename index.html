@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AKUR FAMILY</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <nav class="nav">
+    <div class="logo">AKUR <span>FAMILY</span></div>
+    <ul class="nav-links">
+      <li><a href="#home">Beranda</a></li>
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#gallery">Galeri</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <header id="home" class="hero">
+    <div class="hero-inner">
+      <h1>Selamat Datang di <strong>AKUR FAMILY</strong></h1>
+      <p class="sub">Keluarga yang selalu rukun dan harmonis.</p>
+      <div class="controls">
+        <button id="playBtn" class="btn small">Play Music</button>
+        <button id="pauseBtn" class="btn small">Pause</button>
+      </div>
+    </div>
+    <div class="slideshow" id="slideshow">
+      <!-- slides injected by JS -->
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section card">
+      <h2>Tentang Akur Family</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Keluarga yang menjunjung tinggi kebersamaan, saling menjaga, dan merayakan setiap momen.</p>
+          <ul class="family-list">
+            <li><strong>Kakek:</strong> H. Martawi Jaya</li>
+            <li><strong>Nenek:</strong> Hj. Syamsiah</li>
+            <li><strong>Anak 1:</strong> Apriani Martini (Sukatma)</li>
+            <li><strong>Anak 2:</strong> Widiastuti (Entis Fahrizal)</li>
+            <li><strong>Anak 3:</strong> Nurmawati</li>
+            <li><strong>Anak 4:</strong> Anggi Virsya Marta (Muhammad Mahfudz)</li>
+            <li><strong>Anak 5:</strong> Desi Jayanti</li>
+            <li><strong>Cucu (contoh):</strong> Nabil</li>
+          </ul>
+        </div>
+        <div class="about-photo portrait"></div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section card">
+      <h2>Galeri Keluarga</h2>
+      <div class="gallery-wrap">
+        <div class="gallery-grid" id="galleryGrid"></div>
+      </div>
+      <p class="muted">Klik gambar untuk mengganti (hasil disimpan di browser).</p>
+    </section>
+
+    <section id="contact" class="section card small">
+      <h2>Kontak</h2>
+      <p class="muted">Hubungi perwakilan keluarga untuk informasi atau acara.</p>
+      <div class="contact-row">
+        <div><strong>Sukatma</strong><p class="muted">WA: 08xxxxxxxxxx</p></div>
+        <div><strong>AKUR FAMILY</strong><p class="muted"><a href="mailto:akurfamily@example.com">akurfamily@example.com</a></p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">Proudly created by Nabil — Akur Family Forever ✨</footer>
+
+  <audio id="bgAudio" loop>
+    <source src="assets/lofi.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js').catch(()=>{});
+    }
+  </script>
+</body>
+</html>

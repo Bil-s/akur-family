@@ -1,0 +1,10 @@
+{
+  "name": "Akur Family",
+  "short_name": "AkurFam",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#0c0c0c",
+  "theme_color": "#d4af37",
+  "description": "Website keluarga Akur Family.",
+  "icons": []
+}

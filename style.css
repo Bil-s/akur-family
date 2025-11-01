@@ -1,0 +1,120 @@
+:root {
+    --gold: #d4af37;
+    --dark: #0c0c0c;
+    --gray: #aaaaaa;
+    --white: #ffffff;
+    --transition: .3s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: var(--dark);
+    color: var(--white);
+}
+
+/* NAVBAR */
+nav {
+    width: 100%;
+    background: rgba(0,0,0,.8);
+    padding: 16px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo {
+    color: var(--gold);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+nav ul li a:hover {
+    color: var(--gold);
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.7)),
+    url("images/placeholder1.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: var(--gold);
+}
+
+/* SECTION */
+section {
+    padding: 100px 10%;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--gold);
+}
+
+/* ABOUT */
+.family-tree {
+    border: 2px solid var(--gold);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* GALLERY */
+.gallery-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+
+.gallery-item {
+    height: 200px;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    border: 2px solid var(--gold);
+    transition: var(--transition);
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #111;
+    margin-top: 20px;
+}

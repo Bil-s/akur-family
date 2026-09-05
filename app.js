@@ -10,8 +10,8 @@
   ========================= */
 
   const slideshowImages = [
-    'images/photo1.jpg',
-    'images/photo2.jpg',
+    'images/photo10.jpg',
+    'images/photo20.jpeg',
     'images/photo3.jpg',
     'images/photo4.jpg'
   ];

@@ -435,6 +435,14 @@ body{
   align-items:start;
 }
 
+.about-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+}
+
 .portrait{
   height:260px;
 

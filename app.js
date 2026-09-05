@@ -78,13 +78,13 @@
 
   const galleryImages = [];
 
-  for (let i = 1; i <= 21 ; i++) {
-
-    galleryImages.push(
-      `images/photo${i}.jpg`
-    );
-
+  for (let i = 1; i <= 21; i++) {
+  if (i <= 13) {
+    galleryImages.push(`images/photo${i}.jpg`);
+  } else {
+    galleryImages.push(`images/photo${i}.jpeg`);
   }
+}
 
 
   if (galleryGrid) {
